@@ -15,10 +15,10 @@ public class CheckForPrime {
 		Collections.unmodifiableList(arr);
 
 		for (Object i : arr) {
-			System.out.println(i);
+//			System.out.println(i);
 		}
 
-		int number = 3;
+		int number =21 ;
 		boolean flag = checkforprime(number);
 
 		System.out.println(flag == true ? "prime " : "non prime");
@@ -31,7 +31,7 @@ public class CheckForPrime {
 				return false;
 			}
 		}
-		return true;
+		return true;	
 	}
 
 }
