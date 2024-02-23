@@ -6,7 +6,8 @@ public class SecondLargest {
 
 	public static void main(String[] args) {
 
-		int arr[] = { 2, 5, 1, 3, 0 };
+		int arr[] = { 4, 5, 3, 6, 7 ,7};
+//			{ 2, 5, 1, 3, 0 };
 
 		Arrays.sort(arr);
 
@@ -21,8 +22,40 @@ public class SecondLargest {
 			}
 		}
 		System.out.println();
-		System.out.println("secondmax:" + secondmax);
-
+		System.out.println("secondmax approch 1: " + secondmax);
+		
+		
+//		from end to first
+//		after sort this is valid 
+		
+		for( int i=arr.length-1;i>0;i--) {
+			if(max!=arr[i]) {
+				secondmax=arr[i];
+				break;
+			}
+		}
+		System.out.println("second max approch 2: "+secondmax);
+		
+		
+//		aproch 3 better 
+		max=0;
+		 for(int i=0;i<arr.length;i++) {
+			 if(max<arr[i]) {
+				 max=arr[i];
+			 }
+		 }
+		 secondmax=0;
+		 for(int i=0;i<arr.length;i++) {
+			 if(max>arr[i] &&secondmax<arr[i] ) {
+				 secondmax=arr[i];
+			 }
+		 }
+		 System.out.println(secondmax);
 	}
-
 }
+
+//op:
+//max:5
+//
+//secondmax approch 1: 3
+//second max approch 2: 3
