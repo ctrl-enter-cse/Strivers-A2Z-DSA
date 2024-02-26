@@ -35,6 +35,12 @@ public class RemoveDuplicatesFromSortedArray {
 		}
 //				as i start from 0 so i+1 is the size
 		System.out.println(i+1);
+		System.out.println("------- print only this the index +1 from the orignal arr1" );
+		for(int k=0;k<i+1;k++) {
+			System.out.println(arr1[k]);
+		}
+
+		System.out.println("-------");
 		return st;
 	}
 }
