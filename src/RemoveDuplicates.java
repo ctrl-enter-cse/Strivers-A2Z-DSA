@@ -7,8 +7,10 @@ public class RemoveDuplicates {
 	public static void main(String[] args) {
 		
 		List <Integer> number= Arrays.asList(1,2,3,4,5,2,4,5,6,7,8);
-		
-		
+
+//		int arr []= {};
+		int number1=5; // change made for merge conflit parctice
+
 		System.out.println(number);
 		Collections.sort(number);
 		System.out.println(number);
