@@ -4,7 +4,7 @@ import java.util.Set;
 public class LongestSubstring {
 
 	public static void main(String[] args) {
-		String s = "abcdabacabcde";
+		String s = "abcdefabacabcde";
 
 		int i = checkA1(s);
 		System.out.println("Max LENGth OF  SUBstring :" + i);
@@ -18,7 +18,7 @@ public class LongestSubstring {
 		Set<Character> st = new HashSet();
 		while (r != s.length()) {
 
-			if(st.contains(s.charAt(r))==false) {
+			if (st.contains(s.charAt(r)) == false) {
 				st.add(s.charAt(r));
 				int newlen = r - l + 1;
 				len = Math.max(len, newlen);
