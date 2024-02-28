@@ -44,7 +44,7 @@ public class MajorityElement {
 	}
 
 	private static List<Integer> majorityElement(int[] arr) {
-		ArrayList<Integer> ls = new ArrayList();
+		List<Integer> ls = new ArrayList();
 		int n = Math.floorDiv(arr.length, 3);
 		for (int i = 0; i < arr.length; i++) {
 			int count = 0;
