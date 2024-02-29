@@ -21,8 +21,7 @@ public class SumOf1number {
 		int number=12345;
 		
 		int  digit =(int) Math.floor(Math.log10(number)+1);
-		System.out.println(digit);
-		
+		System.out.println(digit);		
 
 		int sum = print(n);
 
@@ -37,6 +36,7 @@ public class SumOf1number {
 	private static int Approch2(int n) {
 		
 		if(count==n+1) return sum1;
+		
 		sum1 = sum1+count++;
 
 		return Approch2(n);
