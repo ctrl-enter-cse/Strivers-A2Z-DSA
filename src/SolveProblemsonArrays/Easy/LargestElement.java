@@ -1,6 +1,7 @@
 package SolveProblemsonArrays.Easy;
 
 import java.util.Arrays;
+import java.util.List;
 
 public class LargestElement {
 
@@ -20,8 +21,7 @@ public class LargestElement {
 		}
 		System.out.println(" Approch 2 max" + max);
 		
-		
-
+		 Arrays.sort(arr);
 	}
 
 }

@@ -18,7 +18,7 @@ public class PrintNnumber {
 		System.out.println(i);
 		print();
 //		print(5,count);
-		
+			
 	}
 
 	private static int RecApproch(int n) {

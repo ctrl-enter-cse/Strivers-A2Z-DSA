@@ -31,9 +31,10 @@ public class ReverseWord {
 		System.out.println(ar);  //[blue, is, sky, the]
 
 		res = ar.stream().collect(Collectors.joining(" "));
-
+				
 		System.out.println(res);   //blue is sky the
-
+		
+		
 	}
 	
 //	op

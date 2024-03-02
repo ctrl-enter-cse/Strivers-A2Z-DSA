@@ -1,14 +1,13 @@
 package StringProblems;
 
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-
+//Integer.valueOf(c);
+//String.valueOf(5);
 public class CommonPrefix {
 
 	public static void main(String[] args) {
 		String[] s = { "dog", "racecar", "car" };
 		String[] s2 = { "flower", "flow", "flight" };
+		char c='1';
 
 //	List <String> list = Arrays.asList(s);
 //		
@@ -28,6 +27,7 @@ public class CommonPrefix {
 		
 		res = checkprefix(s2);
 		System.out.println(res);
+		
 
 	}
 
