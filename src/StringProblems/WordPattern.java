@@ -30,15 +30,11 @@ public class WordPattern {
 	    		
 	    	
 	    	String pattern = "abba", s = "dog cat cat dog";
-	    	
 	    	boolean flag =wordPattern(pattern,s);
-	    	
 	    	System.out.println(flag);
 	    	
 	    	pattern = "aaaa"; s = "dog cat cat dog";
-	    	
 	    	flag =wordPattern(pattern,s);
-	    	
 	    	System.out.println(flag);
 	    	
 		}
